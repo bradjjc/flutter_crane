@@ -21,34 +21,51 @@ class _AppbarViewState extends State<AppbarView> {
         centerTitle: false,
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: Image(image: AssetImage('images/logo.png')),
+        // leading: Icon(Icons.menu),
         title: Container(
-          height: 36,
+          height: 60,
           child: Row(
             // mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  primary: Colors.white,
-                  side: BorderSide(color: Colors.white, width: 2),
-                  shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  textStyle: TextStyle(
-                    fontSize: 18,
+              Icon(Icons.menu),
+              Padding(
+                padding: const EdgeInsets.only(left:1.0),
+                child: Image(image: AssetImage('images/logo.png')),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left:10.0),
+                child: Container(
+                  width: 280,
+                  child: new Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      OutlinedButton(
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.white,
+                          side: BorderSide(color: Colors.white, width: 2),
+                          shape: const RoundedRectangleBorder(
+                              borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                          textStyle: TextStyle(
+                            fontSize: 18,
+                          ),
+                        ),
+                        onPressed: () {},
+                        child: Text('Fly'),
+                      ),
+                      Text(
+                        'Sleep',
+                        style: TextStyle(fontSize: 17, color: Color(0xFFdddddd)),
+                      ),
+                      Text(
+                        'Eat',
+                        style: TextStyle(fontSize: 17, color: Color(0xFFdddddd)),
+                      ),
+                    ],
                   ),
                 ),
-                onPressed: () {},
-                child: Text('Fly'),
               ),
-              Text(
-                'Sleep',
-                style: TextStyle(fontSize: 17, color: Color(0xFFdddddd)),
-              ),
-              Text(
-                'Eat',
-                style: TextStyle(fontSize: 17, color: Color(0xFFdddddd)),
-              ),
+
             ],
           ),
         ),
