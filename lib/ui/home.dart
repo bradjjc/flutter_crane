@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crane/ui/appbar/appbar_view.dart';
+import 'package:flutter_crane/ui/home_middle/home_middle.dart';
 
 
 class Home extends StatefulWidget {
@@ -17,7 +18,7 @@ class _HomeState extends State<Home> {
       appBar: AppbarView(),
       body: Column(
         children: [
-
+            HomeMiddle(),
         ],
       ),
     );
