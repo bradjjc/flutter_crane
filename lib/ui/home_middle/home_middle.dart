@@ -15,8 +15,6 @@ class _HomeMiddleState extends State<HomeMiddle> {
         children: [
           TextFormField(),
           TextFormField(),
-          TextFormField(),
-          TextFormField(),
         ],
       ),
     );
