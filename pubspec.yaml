@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^5.0.0
   date_range_form_field: ^1.0.2
+  platform_maps_flutter: ^0.1.9+4
 
 dev_dependencies:
   flutter_test:

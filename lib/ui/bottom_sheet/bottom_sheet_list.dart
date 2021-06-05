@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_crane/location/location.dart';
 
 class BottomSheetList extends StatelessWidget {
   const BottomSheetList({Key key}) : super(key: key);
@@ -15,8 +16,8 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg1.jpeg'),
-            width: 90,
+            image: AssetImage('images/khumbu_valley.png'),
+            fit: BoxFit.cover,
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -28,8 +29,8 @@ class BottomSheetList extends StatelessWidget {
           ),
           minLeadingWidth: 100,
           onTap: () {
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => ViewLocation()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => LocationMap()));
           },
         ),
         Divider(
@@ -37,7 +38,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg2.jpeg'),
+            image: AssetImage('khumbu_valley.png'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -54,7 +55,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg3.jpeg'),
+            image: AssetImage('images/khumbu_valley3.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -71,7 +72,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg4.jpeg'),
+            image: AssetImage('images/khumbu_valley5.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -88,7 +89,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg5.jpeg'),
+            image: AssetImage('images/khumbu_valley7.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -105,7 +106,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg6.jpeg'),
+            image: AssetImage('images/khumbu_valley6.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -122,7 +123,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg7.jpeg'),
+            image: AssetImage('images/khumbu_valley7.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -139,7 +140,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg8.jpeg'),
+            image: AssetImage('images/khumbu_valley8.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -156,7 +157,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg9.jpeg'),
+            image: AssetImage('images/khumbu_valley9.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',
@@ -173,7 +174,7 @@ class BottomSheetList extends StatelessWidget {
         ),
         ListTile(
           leading: Image(
-            image: AssetImage('images/bg10.jpeg'),
+            image: AssetImage('images/khumbu_valley9.jpeg'),
           ),
           title: Text(
             'Khumbu Valley, Nepal',

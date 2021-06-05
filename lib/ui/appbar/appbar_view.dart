@@ -30,13 +30,13 @@ class _AppbarViewState extends State<AppbarView> {
             children: <Widget>[
               Icon(Icons.menu),
               Padding(
-                padding: const EdgeInsets.only(left:1.0),
+                padding: const EdgeInsets.only(left:0.0),
                 child: Image(image: AssetImage('images/logo.png')),
               ),
               Padding(
-                padding: const EdgeInsets.only(left:10.0),
+                padding: const EdgeInsets.only(left:2.0),
                 child: Container(
-                  width: 280,
+                  width: 300,
                   child: new Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [

@@ -28,8 +28,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   Container(
                     child: AppbarView(),
                   ),
-                  Container(
-                      child: HomeMiddle(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 0.0),
+                    child: Container(
+                        child: HomeMiddle(),
+                    ),
                   ),
                 ],
               ),
