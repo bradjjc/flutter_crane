@@ -11,16 +11,28 @@ class Home extends StatefulWidget {
   _HomeState createState() => _HomeState();
 }
 
-class _HomeState extends State<Home> {
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
+  final double bodyContentRatioParallax = .9;
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(84, 27, 73, 1),
-      appBar: AppbarView(),
+      // appBar: AppbarView(),
       body: Stack(
         children: [
-          Positioned.fill(
-              child: HomeMiddle(),
+         SizedBox.expand(
+              child: Column(
+                children: [
+                  Container(
+                    child: AppbarView(),
+                  ),
+                  Container(
+                      child: HomeMiddle(),
+                  ),
+                ],
+              ),
           ),
           BottomSheetView(),
         ],

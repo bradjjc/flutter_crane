@@ -20,7 +20,7 @@ class _AppbarViewState extends State<AppbarView> {
       child: AppBar(
         centerTitle: false,
         backgroundColor: Colors.transparent,
-        elevation: 0,
+        elevation: 0.0,
         // leading: Icon(Icons.menu),
         title: Container(
           height: 60,
