@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_crane/ui/appbar/appbar_view.dart';
+import 'package:flutter_crane/ui/bottom_sheet/bottom_sheet_view.dart';
 import 'package:flutter_crane/ui/home_middle/home_middle.dart';
 
 
@@ -16,9 +17,12 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(84, 27, 73, 1),
       appBar: AppbarView(),
-      body: Column(
+      body: Stack(
         children: [
-            HomeMiddle(),
+          Positioned.fill(
+              child: HomeMiddle(),
+          ),
+          BottomSheetView(),
         ],
       ),
     );
