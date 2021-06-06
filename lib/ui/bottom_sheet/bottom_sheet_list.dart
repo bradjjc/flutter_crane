@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_crane/location/location.dart';
 
 class BottomSheetList extends StatelessWidget {
-  const BottomSheetList({Key key}) : super(key: key);
+  final ScrollController controller;
+  const BottomSheetList({Key key, this.controller}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return ListView(
+      controller: controller,
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
       children: [
